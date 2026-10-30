@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ttytap"
+version = "0.1.0"
+description = "Run a terminal program unchanged and serve its session on a Unix socket"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+keywords = ["pty", "terminal", "tty", "unix-socket", "mirror"]
+classifiers = [
+  "Environment :: Console",
+  "Operating System :: POSIX",
+  "Programming Language :: Python :: 3",
+  "Topic :: Terminals",
+]
+
+[project.scripts]
+ttytap = "ttytap:main"
+
+[project.urls]
+Homepage = "https://github.com/kolodny/ttytap"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["ttytap.py"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["ttytap.py", "README.md", "LICENSE"]

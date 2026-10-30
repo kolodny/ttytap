@@ -1,0 +1,32 @@
+{
+  "name": "ttytap",
+  "version": "0.1.0",
+  "description": "Run a terminal program unchanged and serve its session on a Unix socket",
+  "license": "MIT",
+  "bin": {
+    "ttytap": "ttytap.py"
+  },
+  "files": [
+    "ttytap.py"
+  ],
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolodny/ttytap.git"
+  },
+  "keywords": [
+    "pty",
+    "terminal",
+    "tty",
+    "unix-socket",
+    "mirror"
+  ],
+  "author": "Moshe Kolodny",
+  "bugs": {
+    "url": "https://github.com/kolodny/ttytap/issues"
+  },
+  "homepage": "https://github.com/kolodny/ttytap#readme"
+}
